@@ -1,11 +1,10 @@
-/* math image for the website */
-.math_image {
-  position: fixed;
+.icon_image {
+  position: absolute;
+  margin-top: 125px;
+  margin-left: 230px;
   display: flex;
-  margin-left: 16%;
-  margin-top: 2%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 /* title layout */
@@ -16,17 +15,17 @@
 
 /* box width and height */
 .box_lesson {
+  display: inline-block;
   width: 400px;
-  height: 250px;
-  position: fixed;
-  top: 50%;
-  left: 38%;
-  margin-right: 50%;
-  margin-top: -10%;
+  height: 300px;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
   border: 5px solid black;
-  border-radius: 50px;
+  border-radius: 10px;
   border-color: black;
-  line-height: 20px;
+  line-height: 25px;
+  background-color: rgba(255, 255, 255, 0.753);
 }
 
 /* box inside the text */

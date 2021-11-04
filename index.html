@@ -17,18 +17,16 @@
             <header>
                 <h1 v-text="sitename"></h1>
             </header>
-
-            <div class ="box_lesson">
-                <img class= "math_image" v-bind:src="product.image">
-                <h2 class="product_title" v-text="product.title"></h2>
-                <p class="product_location" v-text="product.location"></p>
-                <p class="product_price" v-text="product.price"></p>
-                <p class="product_space" >Spaces: {{product.spaces}}</p>
-                <button type="button" class="btn btn-primary" v-text="product.btn" v-on:click="AddToCart" v-if="canAddToCart"></button>
-                <button type="button" class="btn btn-primary" disabled="disabled" v-text="product.btn" v-else></button>
+            <div class ="box_lesson" v-for="lesson in lessons" :key="index">
+                <img class= "icon_image" v-bind:src="lesson.image">
+                <h2 class="lessons_title" >Subject: {{lesson.title}}</h2>
+                <p class="lessons_location" >Location: {{lesson.locations}}</p>
+                <p class="lessons_price" >Price: {{lesson.price}}£</p>
+                <p class="lessons_space" >Spaces: {{lesson.spaces}}</p>
             </div>
         </div>
 
+        <script src="src/lessons.js"></script>
         <script src="src/vue.js"></script>
     </body>
 </html>
