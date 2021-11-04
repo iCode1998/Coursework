@@ -25,7 +25,7 @@
   border-radius: 10px;
   border-color: black;
   line-height: 25px;
-  background-color: rgba(255, 255, 255, 0.753);
+  background-color: "rgba(255, 255, 255, 0.753);
 }
 
 /* box inside the text */

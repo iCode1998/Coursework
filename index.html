@@ -23,6 +23,7 @@
                 <p class="lessons_location" >Location: {{lesson.locations}}</p>
                 <p class="lessons_price" >Price: {{lesson.price}}£</p>
                 <p class="lessons_space" >Spaces: {{lesson.spaces}}</p>
+                <button type="button" class="btn btn-primary" v-on:click="addToCart[lesson]" :disabled="!canAddToCart[lesson]">Add To Cart</button>
             </div>
         </div>
 

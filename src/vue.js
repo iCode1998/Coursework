@@ -8,11 +8,16 @@ var vueApp = new Vue({
 
     methods:{
 
-        addToCart: function(){
-            const cart = this.scope.vueApp.cart;
-            cart.push(this.id);
-            this.spaces--;
+
+        addToCart: function(lesson){
+            this.cart.push(this.product[lesson].id)
+            this.product[lesson].spaces--;
         },
+
+   // Disallows to add any more items if the remaining spaces are 0
+        canAddToCart: function(lesson){
+             return this.product[lesson].spaces > 0;
+        } 
     },
 
     computed:{
@@ -21,8 +26,6 @@ var vueApp = new Vue({
             return this.cart.length || '';
         },
         // Disallows to add any more items if the remaining spaces are 0
-        canAddToCart: function(){
-            return this.product.spaces > 0;
-        } 
+
     }
 });
