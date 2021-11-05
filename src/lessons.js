@@ -54,7 +54,7 @@ const marketing= {
 
 const computer_science = {
     "id":"7",
-    "title":"Computer Science",
+    "title":"C.Science",
     "locations": "London",
     "price":200,
     "image":"assets/cs.png",

@@ -1,7 +1,7 @@
 var vueApp = new Vue({
     el: '#app',
     data: {
-        sitename: 'After School Club',
+        sitename: 'Lessons.com',
         lessons: [maths,history,science,geography,english,marketing,computer_science,biology,chemistry,art],
         cart:[],
     },
@@ -10,13 +10,13 @@ var vueApp = new Vue({
 
 
         addToCart: function(lesson){
-            this.cart.push(this.product[lesson].id)
-            this.product[lesson].spaces--;
+            this.cart.push(this.lessons[lesson].id)
+            this.lessons[lesson].spaces--;
         },
 
    // Disallows to add any more items if the remaining spaces are 0
         canAddToCart: function(lesson){
-             return this.product[lesson].spaces > 0;
+             return this.lessons[lesson].spaces > 0;
         } 
     },
 

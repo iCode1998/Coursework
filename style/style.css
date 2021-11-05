@@ -38,9 +38,9 @@ h2 {
 
 }
 /* add to cart button */
-.box_lesson button {
-  position: fixed;
-  top: 51%;
-  left: 54%;
+.add_to_cart {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  }
 
-}

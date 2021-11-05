@@ -17,13 +17,13 @@
             <header>
                 <h1 v-text="sitename"></h1>
             </header>
-            <div class ="box_lesson" v-for="lesson in lessons" :key="index">
+            <div class ="box_lesson" v-for="(lesson,index) in lessons">
                 <img class= "icon_image" v-bind:src="lesson.image">
                 <h2 class="lessons_title" >Subject: {{lesson.title}}</h2>
                 <p class="lessons_location" >Location: {{lesson.locations}}</p>
                 <p class="lessons_price" >Price: {{lesson.price}}£</p>
                 <p class="lessons_space" >Spaces: {{lesson.spaces}}</p>
-                <button type="button" class="btn btn-primary" v-on:click="addToCart[lesson]" :disabled="!canAddToCart[lesson]">Add To Cart</button>
+                <button type="button" class="add_to_cart" v-on:click="addToCart(index)" :disabled="!canAddToCart(index)">Add To Cart</button>
             </div>
         </div>
 
