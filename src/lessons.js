@@ -72,7 +72,7 @@ const biology = {
 
 const chemistry = {
     "id":"9",
-    "title":"Maths",
+    "title":"Chemistry",
     "locations": "London",
     "price":100,
     "image":"assets/pt.png",
