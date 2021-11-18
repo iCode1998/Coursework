@@ -41,7 +41,6 @@ var vueApp = new Vue({
                     return 0;
                 }
             }
-
             else if (n == "locations") {
                 function compare(a, b) {
                     if (a.locations > b.locations)
@@ -143,6 +142,24 @@ var vueApp = new Vue({
                 return lessons.title.toLowerCase().match(this.searchBar.toLowerCase());
             });
         },
+
+        //using regular expression to if the inputbox
+        check_phone(number) {
+            var phone = new RegExp(/^\d+$/);
+            return phone.test(number) && number.length == 11;
+        },
+        
+        item_remove(item) {
+            for (var i = 0; i < this.lessons.length; i++) {
+                if (this.lessons[i].id === this.cart[item].id) {
+                    this.lessons[i].spaces++;
+                        this.cart.splice(item, 1);
+                        break;
+
+                }
+            }
+
+        }
         
 
     },
@@ -155,3 +172,4 @@ var vueApp = new Vue({
         },
     }
 });
+
