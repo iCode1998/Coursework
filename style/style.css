@@ -7,11 +7,13 @@
   height: 150px;
 }
 
+/* title layout */
 #app h1 {
   text-align: center;
   font-size: 50px;
 }
 
+/* box width and height */
 .box_lesson {
   display: inline-block;
   width: 400px;
@@ -26,6 +28,7 @@
   background-color: "rgba(255, 255, 255, 0.753);
 }
 
+/* box inside the text */
 .box_lesson p,
 h2 {
   position: relative;
@@ -34,27 +37,10 @@ h2 {
   top: 10%;
 
 }
-
+/* add to cart button */
 .add_to_cart {
   position: relative;
   top: 20%;
   left: 10%;
   }
-
-.remove {
-  position: relative;
-  top: 20%;
-  left: 10%;
-  }
-
-.cart_info {
-  position: relative;
-  left: 43%;
-  }
-
-.cart_buttons {
-  position: relative;
-  left: 5%;
-  }
-
 

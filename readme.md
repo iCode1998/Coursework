@@ -1,2 +1,2 @@
 # Ecommerce-with-Vue.js
-M00715594 Web-Based Mobile App Development https://icode1998.github.io/Coursework/
+JS: Individual project of the Computer Science third-year about Mobile Based App Development.<br>
